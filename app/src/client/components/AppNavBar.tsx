@@ -15,11 +15,11 @@ const navigation = [
   { name: 'AI Scheduler (Demo App)', href: '/demo-app' },
   { name: 'File Upload (AWS S3)', href: '/file-upload' },
   { name: 'Pricing', href: '/pricing' },
-  { name: 'Documentation', href: DOCS_URL },
-  { name: 'Blog', href: BLOG_URL },
+  // { name: 'Documentation', href: DOCS_URL },
+  // { name: 'Blog', href: BLOG_URL },
 ];
 
-const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
+const NavLogo = () => <img className='h-8 w-8' src={logo} alt='IntelliCare' />;
 
 export default function AppNavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,9 +55,9 @@ export default function AppNavBar() {
           ))}
         </div>
         <div className='hidden lg:flex lg:flex-1 gap-3 justify-end items-center'>
-          <ul className='flex justify-center items-center gap-2 sm:gap-4'>
+          {/* <ul className='flex justify-center items-center gap-2 sm:gap-4'>
             <DarkModeSwitcher />
-          </ul>
+          </ul> */}
 
           {isUserLoading ? null : !user ? (
             <a href={!user ? '/login' : '/account'} className='text-sm font-semibold leading-6 ml-4'>
@@ -77,7 +77,7 @@ export default function AppNavBar() {
         <Dialog.Panel className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:text-white dark:bg-boxdark px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between'>
             <a href='/' className='-m-1.5 p-1.5'>
-              <span className='sr-only'>Your SaaS</span>
+              <span className='sr-only'>IntelliCare</span>
               <NavLogo />
             </a>
             <button

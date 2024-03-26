@@ -18,7 +18,7 @@ export default function LandingPage() {
 
   const { data: user, isLoading: isUserLoading } = useAuth();
 
-  const NavLogo = () => <img className='h-8 w-8' src={logo} alt='Your SaaS App' />;
+  const NavLogo = () => <img className='h-8 w-8' src={logo} alt='IntelliCare' />;
 
   return (
     <div className='bg-white dark:text-white dark:bg-boxdark-2'>
@@ -31,7 +31,7 @@ export default function LandingPage() {
               className='flex items-center -m-1.5 p-1.5 text-gray-900 duration-300 ease-in-out hover:text-yellow-500'
             >
               <NavLogo />
-              <span className='ml-2 text-sm font-semibold leading-6 dark:text-white'>Your Saas</span>
+              <span className='ml-2 text-sm font-semibold leading-6 dark:text-white'>IntelliCare</span>
             </a>
           </div>
           <div className='flex lg:hidden'>
@@ -78,7 +78,7 @@ export default function LandingPage() {
           <Dialog.Panel className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-boxdark dark:text-white'>
             <div className='flex items-center justify-between'>
               <a href='/' className='-m-1.5 p-1.5'>
-                <span className='sr-only'>Your SaaS</span>
+                <span className='sr-only'>IntelliCare</span>
                 <NavLogo />
               </a>
               <button
@@ -153,10 +153,12 @@ export default function LandingPage() {
             <div className='mx-auto max-w-8xl px-6 lg:px-8'>
               <div className='lg:mb-18 mx-auto max-w-3xl text-center'>
                 <h1 className='text-4xl font-bold text-gray-900 sm:text-6xl dark:text-white'>
-                  Some <span className='italic'>cool</span> words about your product
-                </h1>
+                {/* Some <span className='italic'>cool</span> words about your product */}
+
+                Redefining the Future of <span className='italic'>Digital Health</span>:                </h1>
                 <p className='mt-6 mx-auto max-w-2xl text-lg leading-8 text-gray-600 dark:text-white'>
-                  With some more exciting words about your product!
+                  {/* With some more exciting words about your product! */}
+                  Intellicare's  <span className='italic'>Smart AI Modules</span> Brings Synergy to the Enterprise.
                 </p>
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
                   <a
