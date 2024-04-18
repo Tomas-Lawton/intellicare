@@ -11,7 +11,7 @@ export default function Login() {
 
   useEffect(() => {
     if (user) {
-      history.push('/');
+      history.push('/app');
     }
   }, [user, history]);
 
