@@ -28,7 +28,7 @@ export default function LandingPage() {
           <div className='flex items-center lg:flex-1'>
             <a
               href='/'
-              className='flex items-center -m-1.5 p-1.5 text-gray-900 duration-300 ease-in-out hover:text-yellow-500'
+              className='flex items-center -m-1.5 p-1.5 text-gray-900 duration-300 ease-in-out hover:text-indigo-700'
             >
               <NavLogo />
               <span className='ml-2 text-sm font-semibold leading-6 dark:text-white'>IntelliCare</span>
@@ -49,7 +49,7 @@ export default function LandingPage() {
               <a
                 key={item.name}
                 href={item.href}
-                className='text-sm font-semibold leading-6 text-gray-900 duration-300 ease-in-out hover:text-yellow-500 dark:text-white'
+                className='text-sm font-semibold leading-6 text-gray-900 duration-300 ease-in-out hover:text-indigo-700 dark:text-white'
               >
                 {item.name}
               </a>
@@ -63,7 +63,7 @@ export default function LandingPage() {
               </ul>
               {isUserLoading ? null : !user ? (
                 <Link to='/login'>
-                  <div className='flex justify-end items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
+                  <div className='flex justify-end items-center duration-300 ease-in-out text-gray-900 hover:text-indigo-700 dark:text-white'>
                     Log in <BiLogIn size='1.1rem' className='ml-1' />
                   </div>
                 </Link>
@@ -107,7 +107,7 @@ export default function LandingPage() {
                 <div className='py-6'>
                   {isUserLoading ? null : !user ? (
                     <Link to='/login'>
-                      <div className='flex justify-start items-center duration-300 ease-in-out text-gray-900 hover:text-yellow-500 dark:text-white'>
+                      <div className='flex justify-start items-center duration-300 ease-in-out text-gray-900 hover:text-indigo-700 dark:text-white'>
                         Log in <BiLogIn size='1.1rem' className='ml-1' />
                       </div>
                     </Link>
@@ -163,7 +163,7 @@ export default function LandingPage() {
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
                   <a
                     href={DOCS_URL}
-                    className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-200 hover:ring-2 hover:ring-yellow-300 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:text-white'
+                    className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-200 hover:ring-2 hover:ring-yellow-300 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-700 dark:text-white'
                   >
                     Get Started <span aria-hidden='true'>→</span>
                   </a>
@@ -255,7 +255,7 @@ export default function LandingPage() {
         <div id='features' className='mx-auto mt-48 max-w-7xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl text-center'>
             <p className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white'>
-              The <span className='text-yellow-500'>Best</span> Features
+              The <span className='text-indigo-700'>Best</span> Features
             </p>
             <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
               Don't work harder.
@@ -281,7 +281,7 @@ export default function LandingPage() {
 
         {/* Testimonial section */}
         <div className='mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8'>
-          <div className='relative sm:left-5 -m-2 rounded-xl bg-yellow-400/20 lg:ring-1 lg:ring-yellow-500/50 lg:-m-4 '>
+          <div className='relative sm:left-5 -m-2 rounded-xl bg-yellow-400/20 lg:ring-1 lg:ring-indigo-700/50 lg:-m-4 '>
             <div className='relative sm:top-5 sm:right-5 bg-gray-900 dark:bg-boxdark px-8 py-20 shadow-xl sm:rounded-xl sm:px-10 sm:py-16 md:px-12 lg:px-20'>
               <h2 className='text-left text-xl font-semibold tracking-wide leading-7 text-gray-500 dark:text-white'>
                 What Our Users Say
@@ -322,7 +322,7 @@ export default function LandingPage() {
                 <dd className='flex items-center justify-start gap-2 mt-4 lg:col-span-7 lg:mt-0'>
                   <p className='text-base leading-7 text-gray-600 dark:text-white'>{faq.answer}</p>
                   {faq.href && (
-                    <a href={faq.href} className='text-base leading-7 text-yellow-500 hover:text-yellow-600'>
+                    <a href={faq.href} className='text-base leading-7 text-indigo-700 hover:text-yellow-600'>
                       Learn more →
                     </a>
                   )}

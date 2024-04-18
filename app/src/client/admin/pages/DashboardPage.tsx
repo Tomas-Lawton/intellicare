@@ -10,10 +10,10 @@ import DefaultLayout from '../layout/DefaultLayout';
 import { useHistory } from 'react-router-dom';
 
 const Dashboard = ({ user }: { user: User }) => {
-  const history = useHistory();
-  if (!user.isAdmin) {
-    history.push('/');
-  }
+  // const history = useHistory();
+  // if (!user.isAdmin) {
+  //   history.push('/');
+  // }
 
   const { data: stats, isLoading, error } = useQuery(getDailyStats);
 

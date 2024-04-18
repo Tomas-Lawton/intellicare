@@ -62,13 +62,16 @@ const PricingPage = () => {
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div id='pricing' className='mx-auto max-w-4xl text-center'>
           <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white'>
-            Pick your <span className='text-yellow-500'>pricing</span>
+            Pick your <span className='text-indigo-700'>pricing</span>
           </h2>
         </div>
         <p className='mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600 dark:text-white'>
           Stripe subscriptions and secure webhooks are built-in. Just add your Stripe Product IDs! Try it out below with
           test credit card number{' '}
           <span className='px-2 py-1 bg-gray-100 rounded-md text-gray-500'>4242 4242 4242 4242 4242</span>
+        </p>
+        <p className='mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600 dark:text-white'>
+        At Intellicare, it's win-win: You don't pay a cent until you start saving on human effort. And the bigger you get, the better our pricing becomes.
         </p>
         <div className='isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 lg:gap-x-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
           {tiers.map((tier) => (
@@ -108,7 +111,7 @@ const PricingPage = () => {
                 <ul role='list' className='mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-white'>
                   {tier.features.map((feature) => (
                     <li key={feature} className='flex gap-x-3'>
-                      <AiFillCheckCircle className='h-6 w-5 flex-none text-yellow-500' aria-hidden='true' />
+                      <AiFillCheckCircle className='h-6 w-5 flex-none text-indigo-700' aria-hidden='true' />
                       {feature}
                     </li>
                   ))}
@@ -125,7 +128,7 @@ const PricingPage = () => {
                       'opacity-100 cursor-pointer': tier.id !== 'enterprise-tier',
                     },
                     {
-                      'bg-yellow-500 text-white hover:text-white shadow-sm hover:bg-yellow-400': tier.bestDeal,
+                      'bg-indigo-700 text-white hover:text-white shadow-sm hover:bg-yellow-400': tier.bestDeal,
                       'text-gray-600 ring-1 ring-inset ring-purple-200 hover:ring-purple-400': !tier.bestDeal,
                     }
                   )}
@@ -142,7 +145,7 @@ const PricingPage = () => {
                       'opacity-100 cursor-pointer': tier.id !== 'enterprise-tier',
                     },
                     {
-                      'bg-yellow-500 text-white hover:text-white shadow-sm hover:bg-yellow-400': tier.bestDeal,
+                      'bg-indigo-700 text-white hover:text-white shadow-sm hover:bg-yellow-400': tier.bestDeal,
                       'text-gray-600  ring-1 ring-inset ring-purple-200 hover:ring-purple-400': !tier.bestDeal,
                     },
                     {
